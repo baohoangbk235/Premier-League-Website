@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content{
+            text-align: center;
+        }
+        iframe{
+            height: 330px;
+            width: 700px;
+        }
+        .awaygoals .goalplayer{
+            color: #ffffff;
+            display: block;
+            background-image: url('https://www.iconexperience.com/_img/m_collection_png/256x256/plain/soccer_ball.png');
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 10px;
+            background-position-y: 2px;
+            padding-left: 30px;
+            
+        }
+        .hostgoal .goalplayer{
+            color: #ffffff;
+            display: block;
+            background-image: url('https://www.iconexperience.com/_img/m_collection_png/256x256/plain/soccer_ball.png');
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 658px;
+            background-position-y: 2px;
+            padding-left: 30px;
+            text-align: right;
+            padding-right: 30px; 
+            
+        }
+        h2 span{
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+        }
+        .club{
+            width: 300px;
+            background-color: rgb(90, 41, 78);
+            color: #ffffff;
+        }
+        .goals{
+            background-color: rgb(167, 26, 26);
+            color: #ffffff;
+            margin:0px -10px 0px -10px;
+            padding:0px 10px 0px 10px;
+        }
+        body{
+            background-color: rgb(4, 5, 104);
+        }
+        .contentgoal{
+            width: 100%;
+                   
+        }
+        .contentgoal .hostgoal{
+            width: 50%;
+           
+            float:left;
+        }
+        .contentgoal .awaygoals{
+            width: 50%;
+            float: right;
+            border-left: 1px solid #ffffff
+        }
+    </style>
+</head>
+<body>
+    
+<div class="content">
+        {{!-- <video src="https://www.youtube.com/embed/XfZMWwb5200"></video> --}}
+       <iframe width="853" height="480" src = {{trandau.highlightsrc}}
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+       {{!-- {{trandau.highlightsrc}} --}}
+       <h2> 
+            <span class="hostclub club"> {{trandau.ten}} </span> 
+            <span class="goals"> 
+                <span class="hostgoals"> {{trandau.sobandoinha}} </span> - 
+                <span class="awaygoals"> {{trandau.sobandoikhach}} </span>
+            </span>  
+            <span class="awayclub club">  {{trandau1.ten}} </span>
+        </h2>
+       
+    </div>
+    <div class="contentgoal">
+        <div class="hostgoal">
+            <span class="goalplayer"> sterling </span> 
+        </div>
+        <div class="awaygoals">
+            <span class="goalplayer"> sterling </span> 
+            <span class="goalplayer"> aguero </span>
+        </div>
+    </div>
+</body>
+</html>
